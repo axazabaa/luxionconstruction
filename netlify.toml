@@ -2,7 +2,6 @@
   command = "bun run build"
   publish = "dist/client"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.environment]
+  NITRO_PRESET = "netlify"
+  NODE_VERSION = "20"
